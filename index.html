@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <!--Css-->
+  <link rel="stylesheet" href="style.css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <section class="sidebar">
+    <a href="#" class="logo">
+      <i class="fa-solid fa-code"></i>
+      <span class="text">Ivan</span>
+    </a>
+    <ul class="side-menu top">
+      <li class="active">
+        <a href="#" class="nav-link">
+            <i class="fas fa-border-all"></i>
+            <span class="text"> Dashboard </span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+            <i class="fas fa-chart-simple"></i>
+            <span class="text">Analysis</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-heart"></i>
+            <span class="text">React</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+            <i class="fa-solid fa-star"></i>
+            <span class="text">Favorite</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="text">Store</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="side-menu">
+      <li>
+        <a href="#">
+          <i class="fas fa-cog"></i>
+          <span class="text">Setting</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="logout">
+        <i class="fas fa-right-from-bracket"></i>
+        <span class="text">Logout</span>
+      </a>
+    </li>
+  </ul>
+  </section>
+
+  <section class="content">
+    <nav>
+      <i class="fas fa-bars menu-btn"></i>
+      <a href="#" class="nav-link">Categories</a>
+      <form action="#">
+        <div class="form-input">
+          <input type="search" name="" id="" placeholder="Search...">
+          <button class="search-btn">
+            <i class="fas fa-search search-icon"></i>
+          </button>
+        </div>
+      </form>
+      <input type="checkbox" name="" id="switch-mode">
+      <label for="switch-mode" class="switch-mode"></label>
+      <a href="#" class="notification">
+        <i class="fa fa-bell"></i>
+        <span class="num">69</span>
+      </a>
+      <a href="" class="profile">
+        <img src="./images/profile.png" alt="">
+      </a>
+    </nav>
+
+    <main>
+      <div class="head-title">
+        <div class="left">
+            <h2>Dashboard</h2>
+            <ul class="breadcrumb">
+              <li><a href="#">Dashboard</a></li>
+              <i class="fas fa-chevron-right"></i>
+              <li><a href="#" class="active">Home</a></li>
+          </ul>
+        </div>
+        <a href="#" class="download-btn">
+          <i class="fas fa-cloud-download-alt"></i>
+          <span class="text">Download Report</span>
+        </a>
+      </div>
+
+      <div class="box-info">
+        <li>
+          <i class="fa-solid fa-dollar-sign"></i>
+          <span class="text">
+            <h3>180K</h3>
+            <p>Revenue</p>
+          </span>
+        </li>
+        <li>
+          <i class="fas fa-people-group"></i>
+          <span class="text">
+            <h3>55K</h3>
+            <p>Clients</p>
+          </span>
+        </li>
+        <li>
+          <i class="fa-solid fa-store"></i>
+          <span class="text">
+            <h3>80</h3>
+            <p>Stores</p>
+          </span>
+        </li>
+      </div>
+
+      <div class="table-data">
+        <div class="order">
+          <div class="head">
+            <h3>Recent Order</h3>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-filter"></i>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Order Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="images/profile4.png" alt="">
+                  <p>James</p>
+                </td>
+                <td>05-10-2023</td>
+                <td><span class="status 
+                  pending">pending</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/profile2.svg" alt="">
+                  <p>Alice</p>
+                </td>
+                <td>07-10-2023</td>
+                <td><span class="status 
+                  pending">pending</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/profile3.png" alt="">
+                  <p>Dan</p>
+                </td>
+                <td>10-10-2023</td>
+                <td><span class="status 
+                  completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/profile5.webp" alt="">
+                  <p>Gabriel</p>
+                </td>
+                <td>03-10-2023</td>
+                <td><span class="status 
+                  refused">refused</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/profile6.png" alt="">
+                  <p>Gaby</p>
+                </td>
+                <td>05-10-2023</td>
+                <td><span class="status 
+                  refused">refused</span></td>
+              </tr>           
+            </tbody>  
+          </table>
+        </div>
+        <div class="todo">
+          <div class="head">
+            <h3>To Do List</h3>
+            <i class="fs fa-plus"></i>
+            <i class="fas fa-filter"></i>
+          </div>
+          <ul class="todo-list">
+            <li class="not-completed">
+              <p>task</p>
+              <i class="fas fa-ellipsis-vertical"></i>
+            </li>
+            <li class="not-completed">
+              <p>task</p>
+              <i class="fas fa-ellipsis-vertical"></i>
+            </li>
+            <li class="completed">
+              <p>task</p>
+              <i class="fas fa-ellipsis-vertical"></i>
+            </li>
+            <li class="completed">
+              <p>task</p>
+              <i class="fas fa-ellipsis-vertical"></i>
+            </li>
+            <li class="completed">
+              <p>task</p>
+              <i class="fas fa-ellipsis-vertical"></i>
+            </li>
+          </ul>
+        </div>
+      </div>     
+    </main>    
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
